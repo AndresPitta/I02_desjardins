@@ -1,0 +1,41 @@
+,model,Train_score,Test_score,Train_test_time,Recall,Precision,F1
+decision tree,"DecisionTreeClassifier(ccp_alpha=0.0, class_weight='balanced', criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=None, splitter='best')",0.941,0.943,0.045,0.8350941662838769,0.7237261146496815,0.7754318618042225
+kNN,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+                     weights='uniform')",0.961,0.962,25.3852,0.7446026642168121,0.918413597733711,0.8224251648909183
+logistic regression,"LogisticRegression(C=1.0, class_weight='balanced', dual=False,
+                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
+                   max_iter=100, multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='liblinear', tol=0.0001, verbose=0,
+                   warm_start=False)",0.911,0.914,0.092,0.8571428571428571,0.5935114503816794,0.7013719225709453
+RBF SVM,"SVC(C=1.0, break_ties=False, cache_size=200, class_weight='balanced', coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)",0.941,0.943,78.132,0.8350941662838769,0.7237261146496815,0.7754318618042225
+random forest,"RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=None, oob_score=False, random_state=None,
+                       verbose=0, warm_start=False)",0.941,0.943,2.065,0.8350941662838769,0.7237261146496815,0.7754318618042225
+xgboost,"XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bytree=1, gamma=0, learning_rate=0.1, max_delta_step=0,
+              max_depth=3, min_child_weight=1, missing=None, n_estimators=100,
+              n_jobs=1, nthread=None, objective='binary:logistic',
+              random_state=0, reg_alpha=0, reg_lambda=1, scale_pos_weight=1,
+              seed=None, silent=True, subsample=1)",0.961,0.962,2.128,0.754248966467616,0.9101995565410199,0.8249183622205476
+lgbm,"LGBMClassifier(boosting_type='gbdt', class_weight='balanced',
+               colsample_bytree=1.0, importance_type='split', learning_rate=0.1,
+               max_depth=-1, min_child_samples=20, min_child_weight=0.001,
+               min_split_gain=0.0, n_estimators=100, n_jobs=-1, num_leaves=31,
+               objective=None, random_state=None, reg_alpha=0.0, reg_lambda=0.0,
+               silent=True, subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0)",0.941,0.943,0.876,0.8350941662838769,0.7237261146496815,0.7754318618042225
+Dummy,"DummyClassifier(constant=None, random_state=None, strategy='stratified')",0.789,0.785,0.01,0.11621497473587505,0.1141696750902527,0.11518324607329843
